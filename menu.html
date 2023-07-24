@@ -11,70 +11,75 @@
     <h2>Principal</h2>
 
     <section id="principal-menu">
-        <button>View</button>
-        <img src="https://img.freepik.com/foto-gratis/filete-ternera-plancha-sobre-superficie-madera-oscura_1150-44344.jpg" alt="carne-res" width="300" height="300">
-        <h3>Meat Res</h3>
-        <p></p>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <div id="div-res">
+            <button onclick="menuRes()">Res</button>
+            <img src="https://img.freepik.com/foto-gratis/filete-ternera-plancha-sobre-superficie-madera-oscura_1150-44344.jpg" alt="carne-res" width="300" height="300">
+            <h3>Meat Res</h3>
+            <p id="paragraph-res"></p>
+            <ul>
+                <li>Papas fritas</li>
+                <li>Ensalada</li>
+                <li>Aguacate</li>
+            </ul>
+        </div>
 
-        <button>View</button>
-        <img src="https://images.hola.com/imagenes/cocina/recetas/20220119203112/pollo-plancha-ensalada-aguacate-anacardos/1-41-626/pollo-adobe-m.jpg" alt="chicken" width="300" height="300">
-        <h3>Chicken</h3>
-        <p></p>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <div id="div-chicken">
+            <button onclick="menuChicken()">Chicken</button>
+            <img src="https://images.hola.com/imagenes/cocina/recetas/20220119203112/pollo-plancha-ensalada-aguacate-anacardos/1-41-626/pollo-adobe-m.jpg" alt="chicken" width="300" height="300">
+            <h3>Chicken</h3>
+            <p id="paragraph-chicken"></p>
+            <ul>
+                <li>Patacon</li>
+                <li>Ensalada</li>
+                <li>Aguacate</li>
+            </ul>
+        </div>
 
-        <button>View</button>
-        <img src="https://i.pinimg.com/originals/c7/1f/6d/c71f6deb6020ba08ce11367df270b91f.jpg" alt="fish" width="300" height="300">
-        <h3>Fish</h3>
-        <p></p>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <div id="div-fish">
+            <button onclick="menuFish()">Fish</button>
+            <img src="https://i.pinimg.com/originals/c7/1f/6d/c71f6deb6020ba08ce11367df270b91f.jpg" alt="fish" width="300" height="300">
+            <h3>Fish</h3>
+            <p id="paragraph-fish"></p>
+            <ul>
+                <li>Patacon</li>
+                <li>Ensalada</li>
+            </ul>
+        </div>
 
-        <button>View</button>
-        <img src="https://www.comedera.com/wp-content/uploads/2021/01/vegetable-skewer-3317060_1280.jpg" alt="vegetarian" width="300" height="300">
-        <h3>Vegetarian</h3>
-        <p></p>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Additional Accompaniment</h2>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <div id="div-vegetarian">
+            <button onclick="menuVegetarian()">Vegetarian</button>
+            <img src="https://www.comedera.com/wp-content/uploads/2021/01/vegetable-skewer-3317060_1280.jpg" alt="vegetarian" width="300" height="300">
+            <h3>Vegetarian</h3>
+            <p id="paragraph-vegetarian"></p>
+            <ul>
+                <li>Carne vegetariana</li>
+                <li>Arroz</li>
+                <li>Ensala</li>
+                <li>Vegetables</li>
+            </ul>
+        </div>
     </section>
 
     <section>
         <h2>Drinks</h2>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <div>
+            <label for="soda">Soda</label>
+            <input type="radio" id="soda" name="drinks">
+
+            <label for="beer">Cerveza</label>
+            <input type="radio" id="beer" name="drinks">
+
+            <!-- <label for="vino">Vino</label>
+            <input type="radio" id="vino" name="drinks"> -->
+
+            <label for="pepsi">Pepsi</label>
+            <input type="radio" id="pepsi" name="drinks">
+            
+            <button onclick="drinks()">Select</button>
+        </div>
+        <p id="paragraph-drinks"></p>
     </section>
     
 </body>
+<script src="./menu.js"></script>
 </html>
