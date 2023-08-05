@@ -94,5 +94,5 @@ function drinks(){
 
 function totalPrice(){
     const pTotal = document.getElementById('total-price')
-    pTotal.innerHTML = ``
+        pTotal.innerHTML = ``
 }
