@@ -9,65 +9,61 @@
 
     <h1>MENU</h1>
 
-    <section class="menu-principal">
+    <section>
+            <div class="div-menu">
 
-        <div id="div-res">
-            <h3>Carnes</h3>
-            <img onclick="menuRes()" src="https://img.freepik.com/foto-gratis/filete-ternera-plancha-sobre-superficie-madera-oscura_1150-44344.jpg" alt="carne-res" width="300" height="300">
-            <p id="paragraph-res"></p>
-            <ul id="list-res"></ul>
-        </div>
+                <div id="div-res">
+                    <h3>Carnes</h3>
+                    <img onclick="menuRes()" src="https://img.freepik.com/foto-gratis/filete-ternera-plancha-sobre-superficie-madera-oscura_1150-44344.jpg" alt="carne-res" width="300" height="300">
+                    <p id="paragraph-res"></p>
+                    <ul id="list-res"></ul>
+                </div>
 
-        <div id="div-chicken">
-            <h3>Chicken</h3>
-            <img onclick="menuChicken()" src="https://images.hola.com/imagenes/cocina/recetas/20220119203112/pollo-plancha-ensalada-aguacate-anacardos/1-41-626/pollo-adobe-m.jpg" alt="chicken" width="300" height="300">
-            <p id="paragraph-chicken"></p>
-            <ul id="list-chicken"></ul>
-        </div>
+                <div id="div-chicken">
+                    <h3>Chicken</h3>
+                    <img onclick="menuChicken()" src="https://images.hola.com/imagenes/cocina/recetas/20220119203112/pollo-plancha-ensalada-aguacate-anacardos/1-41-626/pollo-adobe-m.jpg" alt="chicken" width="300" height="300">
+                    <p id="paragraph-chicken"></p>
+                    <ul id="list-chicken"></ul>
+                </div>
+    
+                <div id="div-fish">
+                    <h3>Fish</h3>
+                    <img onclick="menuFish()" src="https://i.pinimg.com/originals/c7/1f/6d/c71f6deb6020ba08ce11367df270b91f.jpg" alt="fish" width="300" height="300">
+                    <p id="paragraph-fish"></p>
+                    <ul id="list-fish"></ul>
+                </div>
+    
+                <div id="div-vegetarian">
+                    <h3>Vegetarian</h3>
+                    <img onclick="menuVegetarian()" src="https://www.comedera.com/wp-content/uploads/2021/01/vegetable-skewer-3317060_1280.jpg" alt="vegetarian" width="300" height="300">
+                    <p id="paragraph-vegetarian"></p>
+                    <ul id="list-vegetarian"></ul>
+                </div>
 
-        <div id="div-fish">
-            <h3>Fish</h3>
-            <img onclick="menuFish()" src="https://i.pinimg.com/originals/c7/1f/6d/c71f6deb6020ba08ce11367df270b91f.jpg" alt="fish" width="300" height="300">
-            <p id="paragraph-fish"></p>
-            <ul id="list-fish"></ul>
-        </div>
-
-        <div id="div-vegetarian">
-            <h3>Vegetarian</h3>
-            <img onclick="menuVegetarian()" src="https://www.comedera.com/wp-content/uploads/2021/01/vegetable-skewer-3317060_1280.jpg" alt="vegetarian" width="300" height="300">
-            <p id="paragraph-vegetarian"></p>
-            <ul id="list-vegetarian"></ul>
-        </div>
+            </div>  
     </section>
 
     <section>
-
         <h2>DRINKS</h2>
-
         <div class="menu-drinks">
             <label for="soda">
-                <img width="200" height="200" src="https://www.vanguardia.com/binrepository/1280x853/0c0/0d0/none/12204/HAHR/image-upload1618177306_7368289_20220823090014.jpg">
+                <img id="img-soda" width="200" height="200" src="https://www.vanguardia.com/binrepository/1280x853/0c0/0d0/none/12204/HAHR/image-upload1618177306_7368289_20220823090014.jpg">
             </label>
             <input type="radio" id="soda" name="drinks">
 
             <label for="beer">
-                <img width="200" height="200" src="https://www.fayerwayer.com/resizer/4lxEkZMxv5jXoS-NXJq1QZpgYuA=/arc-photo-metroworldnews/arc2-prod/public/D4DYJDIPTNFQLH7B2ROZBCPTDM.jpg">
+                <img id="img-beer" width="200" height="200" src="https://www.fayerwayer.com/resizer/4lxEkZMxv5jXoS-NXJq1QZpgYuA=/arc-photo-metroworldnews/arc2-prod/public/D4DYJDIPTNFQLH7B2ROZBCPTDM.jpg">
             </label>
             <input type="radio" id="beer" name="drinks">
 
             <label for="pepsi">
-                <img width="200" height="200" src="https://st4.depositphotos.com/1063437/38056/i/450/depositphotos_380560238-stock-photo-poznan-pol-may-22-2020.jpg">
+                <img id="img-pepsi" width="200" height="200" src="https://st4.depositphotos.com/1063437/38056/i/450/depositphotos_380560238-stock-photo-poznan-pol-may-22-2020.jpg">
             </label>
             <input type="radio" id="pepsi" name="drinks">
 
             <button onclick="drinks()">Select</button>
         </div>
         <p id="paragraph-drinks"></p>
-    </section>
-
-    <section>
-        <h2>Total</h2>
-        <p id="total-price"></p>
     </section>
     
 </body>

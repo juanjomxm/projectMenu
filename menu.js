@@ -41,38 +41,49 @@ function menuVegetarian(){
         {name: 'vegetarian', price: 31000, acompañamiento:['papas', ' patacon', ' ensalada']}
     ]
     vegetarianMenu.map(item =>{
-        paragraphVegetarian.innerHTML = `El plato ${item.name} tiene un valor de ${item.price} y viene acompañado con:`
+        paragraphVegetarian.innerHTML = `El plato tiene un valor de ${item.price} y viene acompañado con:`
         listVegetarian.innerHTML = `<li>${item.acompañamiento}</li>`
 
     })
 }
+
 
 function drinks(){
     const inputSoda = document.querySelector('#soda')
     const inputBeer = document.querySelector('#beer')
     const inputPepsi = document.querySelector('#pepsi')
     const pDrinks = document.querySelector('#paragraph-drinks')
-
-    const drinksMenu = [
-        {name: 'soda', price: 12000},
-        {name: 'cerveza', price: 10000},
-        {name: 'pepsi', price: 9000}
-    ]
-    const responseDrinks = (query) =>{
-        return drinksMenu.filter(item =>{
-            return item.name.includes(query)
-        })
-        .map(item =>{
-            return `La ${item.name} tiene un valor de ${item.price}`
-        })
+    class drinksMenu{
+        constructor({
+            name,
+            price,
+        }){
+            this.name = name
+            this.price = price
+        }
     }
 
+    const drinkSoda = new drinksMenu({
+        name: 'soda',
+        price: '$12000',
+    })
+
+    const drinkBeer = new drinksMenu({
+        name: 'cerveza',
+        price: '$10000',
+    })
+
+    const drinkPepsi = new drinksMenu({
+        name: 'pepsi',
+        price: '$9000',
+    })
+
     if(inputSoda.checked){
-        pDrinks.innerHTML = responseDrinks('soda')
+        pDrinks.innerHTML = `La ${drinkSoda.name} tiene un valor de ${drinkSoda.price}`
     } else if(inputBeer.checked){
-        pDrinks.innerHTML = responseDrinks('cerveza')
+        pDrinks.innerHTML = `La ${drinkBeer.name} tiene un valor de ${drinkBeer.price}`
     } else if(inputPepsi.checked){
-        pDrinks.innerHTML = responseDrinks('pepsi')
+        pDrinks.innerHTML = `La ${drinkPepsi.name} tiene un valor de ${drinkPepsi.price}`
     }
 }
 

@@ -1,5 +1,11 @@
 img{
     cursor: pointer;
+    border-radius: 20px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
 }
 
 h2{
@@ -12,10 +18,33 @@ h3{
     justify-content: center;
 }
 
-.menu-principal{
+ul{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.div-menu{
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
+}
+
+#div-res{
+    width: 300px;
+    margin-top: 20px;
+}
+#div-chicken{
+    width: 300px;
+    margin-top: 20px;
+}
+#div-fish{
+    width: 300px;
+    margin-top: 20px;
+}
+#div-vegetarian{
+    width: 300px;
+    margin-top: 20px;
 }
 
 .menu-drinks{
