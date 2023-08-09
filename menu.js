@@ -1,65 +1,49 @@
 function menuRes(){
     const paragraphRes = document.getElementById('paragraph-res')
-    const divOneRes = document.getElementById('div-one-res')
-    const divOneRes2 = document.getElementById('div-two-res')
-    const divOneRes3 = document.getElementById('div-three-res')
-    
+    const listRes = document.getElementById('list-res')
     const meatRes = [
-        {name: 'res', price:35000}
+        {name: 'res', price:35000, acompañamiento:['papas', ' patacon', ' ensalada']}
     ]
     meatRes.map(item =>{
-        paragraphRes.innerHTML = `El plato tiene un valor de ${item.price} y viene acompañado con:`
-        divOneRes.innerText = '* Papas'
-        divOneRes2.innerText = '* Patacon'
-        divOneRes3.innerText = '* Ensalada'
+         paragraphRes.innerHTML = `El plato tiene un valor de ${item.price} y viene acompañado con:`
+         listRes.innerHTML = `<li>${item.acompañamiento}</li>`
     })
 }
 
 function menuChicken(){
     const paragraphChicken = document.getElementById('paragraph-chicken')
-    const divOneChicken = document.getElementById('div-one-chicken')
-    const divOneChicken2 = document.getElementById('div-two-chicken')
-    const divOneChicken3 = document.getElementById('div-three-chicken')
+    const listChicken = document.getElementById('list-chicken')
     const chicken = [
-        {name: 'chicken', price: 32000}
+        {name: 'chicken', price: 32000, acompañamiento:['papas', ' patacon', ' ensalada']}
     ]
     chicken.map(item =>{
         paragraphChicken .innerHTML = `El plato tiene un valor de ${item.price} y viene acompañado con:`
-        divOneChicken.innerText = '* Papa en pure'
-        divOneChicken2.innerText = '* Patacon'
-        divOneChicken3.innerText = '* Aguacate'
+        listChicken.innerHTML = `<li>${item.acompañamiento}</li>`
     })
 }
 
 function menuFish(){
     const paragraphFish = document.getElementById('paragraph-fish')
-    const divOneFish = document.getElementById('div-one-fish')
-    const divOneFish2 = document.getElementById('div-two-fish')
-    const divOneFish3 = document.getElementById('div-three-fish')
+    const listFish = document.getElementById('list-fish')
     const fishMenu = [
-        {name: 'fish', price: 30000}
+        {name: 'fish', price: 30000, acompañamiento:['papas', ' patacon', ' ensalada']}
     ]
     fishMenu.map(item =>{
         paragraphFish.innerHTML = `El plato tiene un valor de ${item.price} y viene acompañado con:`
-        divOneFish.innerText = '* Papas'
-        divOneFish2.innerText = '* Patacon'
-        divOneFish3.innerText = '* Ensalada'
+        listFish.innerHTML = `<li>${item.acompañamiento}</li>`
     })
 }
 
 function menuVegetarian(){
     const paragraphVegetarian = document.getElementById('paragraph-vegetarian')
-    const divOneVegetarian = document.getElementById('div-one-vegetarian')
-    const divOneVegetarian2 = document.getElementById('div-two-vegetarian')
-    const divOneVegetarian3 = document.getElementById('div-three-vegetarian')
+    const listVegetarian = document.getElementById('list-vegetarian')
     const vegetarianMenu = [
-        {name: 'fish', price: 31000}
+        {name: 'vegetarian', price: 31000, acompañamiento:['papas', ' patacon', ' ensalada']}
     ]
     vegetarianMenu.map(item =>{
-        paragraphVegetarian.innerHTML = `El plato tiene un valor de ${item.price} y viene acompañado con:`
-        divOneVegetarian.innerText = '* Carne vegetarian'
-        divOneVegetarian2.innerText = '* Vgetales'
-        divOneVegetarian3.innerText = '* Arroz'
+        paragraphVegetarian.innerHTML = `El plato ${item.name} tiene un valor de ${item.price} y viene acompañado con:`
+        listVegetarian.innerHTML = `<li>${item.acompañamiento}</li>`
+
     })
 }
 
