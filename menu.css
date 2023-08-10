@@ -18,6 +18,11 @@ h3{
     justify-content: center;
 }
 
+p{
+    display: flex;
+    justify-content: center; 
+}
+
 ul{
     display: flex;
     justify-content: center;
